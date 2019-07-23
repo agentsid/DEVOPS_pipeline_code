@@ -25,7 +25,8 @@ pipeline {
 		}
 		stage('Deployment') {
 	    	steps {
-				sudo cp /root/.jenkins/workspace/pipeline/target/gamutkart.war /root/.jenkins/workspace/pipeline/apache-tomcat-8.5.38/webapps/'
+				sh 'sshpass -p "gamut" scp target/gamutkart.war gamut@172.17.0.2:/home/gamut/tomcat/apache-tomcat-8.5.43/webapps'
+			        sh 'sshpass -p "gamut" ssh gamut@172.17.0.2 "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" "/home/gamut/tomcat/apache-tomcat-8.5.43/bin/startup.sh"'
 				
          	}
 		}
