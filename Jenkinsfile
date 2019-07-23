@@ -2,11 +2,11 @@ pipeline {
     agent any
 
 	tools {
-		maven 'maven3.6'
+		maven 'M2_HOME'
 	}
 
 //	environment {
-//		M2_INSTALL = "/home/gamut/Distros/apache-maven-3.6.0/bin/mvn"
+//		M2_INSTALL = "/usr/share/maven/bin"
 //	}
 
     stages {
