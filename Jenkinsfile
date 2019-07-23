@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-	tools {
-		maven 'M2_HOME'
-	}
+
 
 //	environment {
 //		M2_INSTALL = "/usr/share/maven/bin"
