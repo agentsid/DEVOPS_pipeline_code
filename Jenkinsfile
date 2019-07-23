@@ -25,7 +25,7 @@ pipeline {
 		}
 		stage('Deployment') {
 	    	steps {
-				sh 'sshpass -p "root" cp /root/.jenkins/workspace/pipeline/target/gamutkart.war /root/.jenkins/workspace/pipeline/apache-tomcat-8.5.38/webapps/'
+				 cp /root/.jenkins/workspace/pipeline/target/gamutkart.war /root/.jenkins/workspace/pipeline/apache-tomcat-8.5.38/webapps/'
 				
          	}
 		}
