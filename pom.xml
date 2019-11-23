@@ -9,7 +9,7 @@
 	<distributionManagement>
         <repository>
             <id>deployemnt</id>
-            <url>http://13.232.110.96:8081/repository/sample-snapshot/</url>
+            <url>http://13.235.114.3:8081/repository/sample-snapshot/</url>
         </repository>
        </distributionManagement>
         <properties>
