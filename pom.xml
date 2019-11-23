@@ -12,6 +12,10 @@
             <url>http://15.206.159.143:8081/repository/sample-snapshot/</url>
         </repository>
        </distributionManagement>
+        <properties>
+                    <maven.compiler.source>1.6</maven.compiler.source>
+                    <maven.compiler.target>1.6</maven.compiler.target>
+        </properties>
 	
 	<dependencies>
 		<dependency>
@@ -20,10 +24,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<properties>
-                    <maven.compiler.source>1.6</maven.compiler.source>
-                    <maven.compiler.target>1.6</maven.compiler.target>
-                </properties>
 			
 	
 		<dependency>
