@@ -6,7 +6,7 @@ pipeline {
 	}
 //
 //	environment {
-//		M2_INSTALL = "/home/siddharth/Destros/Maven/apache-maven-3.6.3/bin"
+//		M2_HOME = "/home/siddharth/Destros/Maven/apache-maven-3.6.3/bin"
 //	}
 
     stages {
